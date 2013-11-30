@@ -15,7 +15,7 @@ Hide opcode cache check in system environment check
 .. only:: html
 
 	:Classification:
-		extension_key
+		no_opcode_cache_check
 
 	:Version:
 		|release|
@@ -24,10 +24,10 @@ Hide opcode cache check in system environment check
 		en
 
 	:Description:
-		enter description.
+		This extension deactivates opcode cache check in system environment check
 
 	:Keywords:
-		comma,separated,list,keywords
+		opcode, opcode cache check, system environment check
 
 	:Copyright:
 		2013
@@ -36,7 +36,7 @@ Hide opcode cache check in system environment check
 		Adrian Dymorz
 
 	:Email:
-		author@example.com
+		dev@adrian.dymorz.ch
 
 	:License:
 		This document is published under the Open Content License
@@ -49,13 +49,31 @@ Hide opcode cache check in system environment check
 	a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
 
 
-	**Table of Contents**
+What does it do?
+----------------
 
-.. toctree::
-	:maxdepth: 5
-	:titlesonly:
-	:glob:
+This extenions deactivates opcode cache check in system environment check. Use the extension for environments where no opcode cache is available to prevent the system status update cron job sending emails about it.
 
-	Introduction/Index
-	UsersManual/Index
-	AdministratorManual/Index
+.. figure:: ../Images/SystemEnvironmentCheck.png
+	:width: 549px
+	:alt: System environment check
+
+	Screenshot of the modified system environment check
+
+Users manual
+------------
+
+Install the extension and the warning about missing opcode cache is vanished.
+
+Administrator Manual
+--------------------
+
+There is no configuration for this extension. No special steps required after installation.
+
+If you find any issues report them on the `forge project page`_.
+
+.. _`forge project page`: http://forge.typo3.org/projects/extension-no_opcode_cache_check
+
+You find the source code on `the github repository`_.
+
+.. _`the github repository`: https://github.com/adymorz/no_opcode_cache_check
