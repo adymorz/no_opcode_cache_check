@@ -54,7 +54,7 @@ What does it do?
 
 This extenions deactivates opcode cache check in system environment check. Use the extension for environments where no opcode cache is available to prevent the system status update cron job sending emails about it.
 
-.. figure:: ../Images/SystemEnvironmentCheck.png
+.. figure:: Images/SystemEnvironmentCheck.png
 	:width: 549px
 	:alt: System environment check
 
